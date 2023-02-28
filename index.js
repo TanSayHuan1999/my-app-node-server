@@ -23,5 +23,5 @@ const PORT = process.env.PORT || 3426;
 mongoose.set("strictQuery", false);
 mongoose
   .connect(process.env.CONNECTION_URL)
-  .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT} 🔥`)))
+  .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT} 🔥🔥🔥`)))
   .catch((err) => console.error(err.message));
