@@ -3,7 +3,8 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
-import codeSnippetsRoutes from "./routes/codeSnippets.js";
+import codeSnippetsRoutes from "./routes/codeSnippet.js";
+import ytDownloaderRoutes from "./routes/youtubeDownloader.js";
 
 const app = express();
 dotenv.config();
@@ -13,6 +14,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 app.use("/code-snippets", codeSnippetsRoutes);
+app.use("/yt-downloader", ytDownloaderRoutes);
 
 app.get("/", (req, res) => {
   res.send("APP IS RUNNING!");

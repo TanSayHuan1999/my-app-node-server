@@ -1,0 +1,2 @@
+# chatgpt api key
+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
